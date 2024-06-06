@@ -16,9 +16,12 @@ def feature_button(name: str):
 
 def feature_button_hstack(mobile=False):
     return rx.hstack(
-        feature_button("Frontend"),
-        feature_button("Backend"),
-        feature_button("Hosting"),
+        feature_button("Python"),
+        feature_button("IA"),
+        feature_button("Desarrollo Web"),
+        feature_button("Data"),
+        feature_button("Celulas Agiles"),
+        feature_button("Apps Moviles"),
         justify="start" if not mobile else "center",
         width="100%",
     )
@@ -27,7 +30,7 @@ def feature_button_hstack(mobile=False):
 def hero_section_text(mobile=False):
     return rx.vstack(
         rx.chakra.text(
-            "Web apps in pure Python.",
+            "Soluciones Informaticas.",
             text_align="left" if not mobile else "center",
             background_image="linear-gradient(95deg, #D6D6ED 42.14%, #727280 63.21%)",
             font_size=["24px", "30px", "40px", "54px", "54px", "54px"],
@@ -37,7 +40,7 @@ def hero_section_text(mobile=False):
             
         ),
         rx.chakra.text(
-            "Deploy with a single command.",
+            "Desarrollos con la ultima tecnologia y basadas en IA.",
             text_align="left" if not mobile else "center",
             color="#6C6C81",
             font_size=["24px", "30px", "40px", "54px", "54px", "54px"],
@@ -64,7 +67,7 @@ def hero_section_buttons(mobile=False):
         rx.link(
             rx.flex(
                 rx.button(
-                    "Get Started",
+                    "Contactanos",
                     rx.icon(
                     tag="chevron-right",
                         size=18,
@@ -88,7 +91,7 @@ def hero_section_buttons(mobile=False):
         ),
         rx.link(
             rx.button(
-                "Get a demo ",
+                "Servicios",
                 rx.icon(
                     tag="chevron-right",
                     size=18,

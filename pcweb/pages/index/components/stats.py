@@ -16,14 +16,14 @@ def user_count_item(count, platform) -> rx.Component:
 
 def user_count_comp() -> rx.Component:
     return rx.center(
-        rx.tablet_and_desktop(user_count_item(110, "Contributors")),
-        rx.mobile_only(user_count_item(110, "Contributors")),
+        rx.tablet_and_desktop(user_count_item(1, "Clientes")),
+        rx.mobile_only(user_count_item(1, "Clientes")),
         rx.divider(size="4", orientation="vertical"),
-        rx.tablet_and_desktop(user_count_item(5000, "Project created per month")),
-        rx.mobile_only(user_count_item(5000, "Project")),
+        rx.tablet_and_desktop(user_count_item(10, "Proyectos Creados")),
+        rx.mobile_only(user_count_item(10, "Proyectos")),
         rx.divider(size="4", orientation="vertical"),
-        rx.tablet_and_desktop(user_count_item(3700, "Discord Members")),
-        rx.mobile_only(user_count_item(3700, "On Discord")),
+        rx.tablet_and_desktop(user_count_item(1000, "Seguidores en Redes")),
+        rx.mobile_only(user_count_item(1000, "Seguidores")),
         spacing="5",
         padding="1em",
     )
@@ -33,7 +33,7 @@ def open_source_badge() -> rx.Component:
     return rx.button(
         rx.flex(
             rx.text(
-                "Open Source",
+                "Evolutio AI.",
                 color="transparent",
                 font_size="14px",
                 font_style="normal",
@@ -113,7 +113,7 @@ def github_button() -> rx.Component:
 def invite_message() -> rx.Component:
     return rx.box(
         rx.text(
-            "Contribute to our open-source community.",
+            "Dejanos tus comentarios en redes, y ayudanos a que la comunidad crezca!",
             color="#D6D6ED",
             font_size="38px",
             weight="bold",
@@ -162,13 +162,13 @@ def invite_card_comp() -> rx.Component:
     return rx.box(
         rx.flex(
             rx.text(
-                "Contribute to Reflex!", 
+                "@MartinLuisG", 
                 color="#D6D6ED",
                 weight="medium",
             ),
             request_buttons(),
             rx.text(
-                "Start contributing today, checkout our Github for Details",
+                "Muy buena Empresa!, sus servicios son realmente buenos!",
                 color="#6C6C81",
                 weight="medium",
             ),

@@ -5,7 +5,7 @@ from pcweb.signup import IndexState
 def news_letter_text() -> rx.Component:
     return rx.vstack(
         rx.chakra.text(
-            "Join Our Newsletter!",
+            "¿Quieres mas Info?, Dejanos tu email.",
             text_align="left",
             background_image="linear-gradient(95deg, #D6D6ED 42.14%, #727280 63.21%)",
             font_size=["20px", "20px", "28px", "42px", "42px", "42px"],
@@ -14,7 +14,7 @@ def news_letter_text() -> rx.Component:
             line_height="1",            
         ),
         rx.chakra.text(
-            " Get the latest updates and news about Reflex.",
+            " Nos contactaremos lo antes posible. :)",
             text_align="left",
             color="#6C6C81",
             font_weight="bold",
@@ -50,7 +50,7 @@ def news_letter_form() -> rx.Component:
         rx.chakra.input_group(
             rx.chakra.input_right_element(
                 rx.chakra.button(
-                    "Subscribe ->",
+                    "->",
                     type_="submit",
                     color="#FFF",
                     background="linear-gradient(180deg, #6151F3 0%, #5646ED 100%)",
@@ -67,7 +67,7 @@ def news_letter_form() -> rx.Component:
             ),
             rx.chakra.input(
                 name="input_email",
-                placeholder="Enter your email address here",
+                placeholder="Ingresa tu Email",
                 color="#fff",
                 background="rgba(161, 157, 213, 0.03)",
                 border="2px solid rgba(186, 199, 247, 0.12)",

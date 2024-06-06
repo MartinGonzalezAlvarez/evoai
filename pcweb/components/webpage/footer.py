@@ -57,15 +57,15 @@ def installation():
     return rx.center(
         rx.flex( 
             rx.flex(
-                rx.flex(rx.text("1", color=number_color),rx.text("$", color=other_color), rx.text("pip install reflex", color=text_color), spacing ="2"),
-                rx.flex(rx.text("2", color=number_color),rx.text("$",  color=other_color), rx.text("reflex init", color=text_color), spacing ="2"),
-                rx.flex(rx.text("3", color=number_color),rx.text("$",  color=other_color), rx.text("reflex run", color=text_color), spacing ="2"),
+                rx.flex(rx.text("1", color=number_color),rx.text(color=other_color), rx.text("¿Eres Programador?", color=text_color), spacing ="2"),
+                rx.flex(rx.text("2", color=number_color),rx.text(color=other_color), rx.text("¿Sabes Python?", color=text_color), spacing ="2"),
+                rx.flex(rx.text("3", color=number_color),rx.text(color=other_color), rx.text("¿Que sabes de Inteligencia Artificial?", color=text_color), spacing ="2"),
                 rx.flex(
-                    rx.text("You should see your first app", color=bottom_color),
+                    rx.text("Te pondremos aprueba!", color=bottom_color),
                     rx.box(flex_grow=1),
                     rx.link(
                         rx.button(
-                            "View Docs",
+                            "Mas Info.",
                             border_radius= "8px;",
                             background= "linear-gradient(180deg, #6151F3 0%, #5646ED 100%);",
                             box_shadow= "0px 0px 0px 1px rgba(255, 255, 255, 0.09) inset, 0px 0px 6px 2px rgba(255, 255, 255, 0.12) inset, 0px 2px 24px -1px #080525, 0px 3px 9px -2px #4033C0;",
@@ -171,12 +171,12 @@ def links():
             ),
         ),
         rx.vstack(
-            rx.text("Site", color="#E8E8F4"),
-            rx.link("Home", href=index.path, style=footer_item_style),
-            rx.link("Gallery", href=gallery.path, style=footer_item_style),
-            rx.link("Blog", href=blogs.path, style=footer_item_style),
+            rx.text("Sitio", color="#E8E8F4"),
+            rx.link("Inicio", href=index.path, style=footer_item_style),#Direccionar a Home
+            rx.link("Demos", href=gallery.path, style=footer_item_style),#Demostraciones de Software con IA
+            rx.link("Servicios", href=blogs.path, style=footer_item_style),#Nuestros Servicios
             rx.link(
-                "Changelog",
+                "TimeLine",
                 href=changelog.path,
                 style=footer_item_style,
             ),
@@ -251,6 +251,7 @@ def footer(style=footer_style):
                     "Copyright © 2024 Pynecone, Inc.",
                     style=footer_item_style,
                     font_size="0.8em",
+                    
                 ),
                 rx.hstack(
                     rx.link(
